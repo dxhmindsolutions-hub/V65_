@@ -8,19 +8,35 @@
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#4CAF50">
   
-<!-- FUENTE INTER -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-font-family:'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background:#f2f2f7
+  
+  @font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background:#f2f2f7;
+  -webkit-font-smoothing: antialiased;
+}
+  
 /* ===== HEADER ===== */
 header{
   background:#fff;
